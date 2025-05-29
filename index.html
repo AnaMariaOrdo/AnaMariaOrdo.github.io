@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,19 +47,20 @@
         birdIcon.addEventListener('click', function (evt) {
           document.querySelector("#birdSound").play();
         });
-       snakeIcon.addEventListener('click', function (evt) {
+        snakeIcon.addEventListener('click', function (evt) {
           document.querySelector("#snakeSound").play();
-        }); 
+        });
         facebookbutton.addEventListener('click', function (evt) {
           window.location.href="https://www.facebook.com/naturalezacreativa.fn";
         });
 
       }
-	 const showPortfolio = (done) => {
-        	const portfolio = document.querySelector("#portfolio-panel");
-       		const portfolioLeftButton = document.querySelector("#portfolio-left-button");
-        	const portfolioRightButton = document.querySelector("#portfolio-right-button");
-        	const paintandquestPreviewButton = document.querySelector("#paintandquest-preview-button");
+
+      const showPortfolio = (done) => {
+        const portfolio = document.querySelector("#portfolio-panel");
+        const portfolioLeftButton = document.querySelector("#portfolio-left-button");
+        const portfolioRightButton = document.querySelector("#portfolio-right-button");
+        const paintandquestPreviewButton = document.querySelector("#paintandquest-preview-button");
 
         let y = 0;
         let currentItem = 0;
@@ -76,6 +76,7 @@
           y += 0.008;
           if (y >= 0.6) {
             clearInterval(id);
+
             paintandquestPreviewButton.addEventListener('click', () => {
               paintandquestPreviewButton.setAttribute("visible", false);
               const testVideo = document.createElement( "video" );
@@ -209,7 +210,7 @@
           <img id="icon-facebook" src="./assets/Facebook.png" />
           <img id="icon-play" src="./assets/reproducir.png" />
 
-          <img id="icon-snake" src="./assets/pwpks2a80bj31.gif" />
+          <img id="icon-snake" src="./assets/serpiente.png" />
           <img id="icon-frog" src="./assets/rana.png" />
           <img id="icon-bat" src="./assets/murcielago.png" />
           <img id="icon-bird" src="./assets/colibri.png" />
@@ -273,3 +274,4 @@
     </div>
   </body>
 </html>
+
